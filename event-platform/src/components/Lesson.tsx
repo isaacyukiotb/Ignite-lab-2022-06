@@ -19,7 +19,7 @@ export function Lesson({title, slug, availableAt, type, ...props }: LessonProps)
     
 
     return (
-        <Link to={`/event/lesson/${slug}`} className='group'>
+        <Link to={`/event/lesson/${slug}`} onClick={window.location.reload} className='group'>
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>
