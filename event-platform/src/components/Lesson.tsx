@@ -36,8 +36,11 @@ export function Lesson(props: LessonProps) {
                 className={classNames("rounded border border-gray-500 p-4 mt-2 ", {
                     'bg-green-500': isActiveLesson,
                     'group-hover:border-green-500': isLessonAvailable,
+                    
+                    'group-hover:cursor-not-allowed': !isLessonAvailable,
+                    'bg-opacity-50': !isLessonAvailable,
                     'bg-gray-600': !isLessonAvailable,
-
+                    'border-none': !isLessonAvailable,
                 })}
             >
 
