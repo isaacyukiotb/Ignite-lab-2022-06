@@ -15,9 +15,9 @@ const GET_LESSON_QUERY = gql`
 
 interface GetLessonQueryResponse {
     lessons: {
-        id:string
-        title:string
-        slug:string
+        id: string
+        title: string
+        slug: string
         availableAt: string
         lessonType: 'live' | 'class'
     }[]
